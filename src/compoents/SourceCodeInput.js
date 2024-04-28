@@ -1,21 +1,23 @@
 // src/components/CodeInputForm.js
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 
-function CodeInputForm({ onSubmit }) {
-    const [code, setCode] = useState('');
+function CodeInputForm({ exampleInput, onCodeChange}) {
+    const [input, setInput] = useState('');
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        onSubmit(code);
-    };
+    useEffect(() => {
+        setInput(exampleInput);
+    }, [exampleInput]);
 
     return (
       <div>
           <h3>Enter Source Code Here</h3>
-          <form onSubmit={handleSubmit}>
+          <form>
               <textarea
-              value={code}
-              onChange={(e) => setCode(e.target.value)}
+              value={input}
+              onChange={(e) => {
+                  setInput(e.target.value);
+                  onCodeChange(e.target.value);
+              }}
               placeholder="Type your C code here"
               rows={10}
               cols={50}
