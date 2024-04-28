@@ -1,0 +1,26 @@
+/* About.css */
+.about-container {
+    text-align: left;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* You can choose a different font if you like */
+}
+
+.about-container h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about-container p {
+    margin-bottom: 1rem;
+}
+
+.about-container code {
+    background-color: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
