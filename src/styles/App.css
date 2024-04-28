@@ -60,7 +60,24 @@
 }
 
 .load-files button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: white;
+    transition: background-color 0.2s;
     margin-right: 10px;
     margin-left: 10px;
 }
-/* Add additional styling as needed */
+
+.load-files button:hover{
+    background-color: #E6E6E6;
+}
+
+.editor-container{
+    flex: 1;
+    border: 1px solid black;
+    padding: 10px;
+}
