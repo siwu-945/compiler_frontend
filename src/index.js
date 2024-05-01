@@ -9,7 +9,7 @@ root.render(
 //changed from BrowserRouter to HashRouter because github pages doesn't support BrowserRouter
 <HashRouter>
     <App />
-  </HashRouter>
+</HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
